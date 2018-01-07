@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MunicpalTax.Data", "MunicpalTax.Data\MunicpalTax.Data.csproj", "{03F16C40-9075-470B-A0D3-02EBD89C80B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03F16C40-9075-470B-A0D3-02EBD89C80B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F16C40-9075-470B-A0D3-02EBD89C80B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F16C40-9075-470B-A0D3-02EBD89C80B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F16C40-9075-470B-A0D3-02EBD89C80B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D90432D7-1D74-41C0-98CF-A6606EA9ED85}
+	EndGlobalSection
+EndGlobal
