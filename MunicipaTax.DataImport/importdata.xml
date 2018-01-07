@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TaxRates>
+  <TaxRate>
+    <Name>Year 2017</Name>
+    <MunicipalityName>Vilnius</MunicipalityName>
+    <RateType>1</RateType>
+    <StartDate>2017-01-01</StartDate>
+    <EndDate>2017-12-31</EndDate>
+    <Rate>0.1</Rate>
+  </TaxRate>
+  <TaxRate>
+    <Name>Year 2018</Name>
+    <RateType>1</RateType>
+    <MunicipalityName>Kaunas</MunicipalityName>
+    <StartDate>2018-01-01</StartDate>
+    <EndDate>2018-12-31</EndDate>
+    <Rate>0.15</Rate>
+  </TaxRate>
+  <TaxRate>
+    <Name>2017-M3</Name>
+    <MunicipalityName>Vilnius</MunicipalityName>
+    <RateType>2</RateType>
+    <StartDate>2017-03-01</StartDate>
+    <EndDate>2017-03-31</EndDate>
+    <Rate>0.2</Rate>
+  </TaxRate>
+  <TaxRate>
+    <Name>2018-M4</Name>
+    <MunicipalityName>Vilnius</MunicipalityName>
+    <RateType>2</RateType>
+    <StartDate>2017-04-01</StartDate>
+    <EndDate>2017-04-30</EndDate>
+    <Rate>0.24</Rate>
+  </TaxRate>
+  <TaxRate>
+    <Name>2017-W4</Name>
+    <MunicipalityName>Vilnius</MunicipalityName>
+    <RateType>3</RateType>
+    <StartDate>2017-01-23</StartDate>
+    <EndDate>2017-01-29</EndDate>
+    <Rate>0.25</Rate>
+  </TaxRate>
+  <TaxRate>
+    <Id>bbbfc459-f593-4a88-928c-8d0d3772ca5e</Id>
+    <Name>2017-D60</Name>
+    <MunicipalityName>Vilnius</MunicipalityName>
+    <RateType>4</RateType>
+    <StartDate>2017-03-02</StartDate>
+    <EndDate>2017-03-02</EndDate>
+    <Rate>0.4</Rate>
+  </TaxRate>
+  <TaxRate>
+    <Name>2018-D90</Name>
+    <MunicipalityName>Vilnius</MunicipalityName>
+    <RateType>4</RateType>
+    <StartDate>2017-04-01</StartDate>
+    <EndDate>2017-04-01</EndDate>
+    <Rate>0.45</Rate>
+  </TaxRate>
+</TaxRates>

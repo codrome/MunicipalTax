@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03F16C40-9075-470B-A0D3-02EBD89C80B1}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MunicpalTax.Data</RootNamespace>
-    <AssemblyName>MunicpalTax.Data</AssemblyName>
+    <ProjectGuid>{9933C50E-0F76-4C81-94E9-A8AAE53693E8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MunicipaTax.DataImport</RootNamespace>
+    <AssemblyName>MunicipaTax.DataImport</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,16 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201801070855483_InitialMigration.cs" />
-    <Compile Include="Migrations\201801070855483_InitialMigration.Designer.cs">
-      <DependentUpon>201801070855483_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801071137207_AddMunicipalityName.cs" />
-    <Compile Include="Migrations\201801071137207_AddMunicipalityName.Designer.cs">
-      <DependentUpon>201801071137207_AddMunicipalityName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="TaxRate.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,12 +57,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201801070855483_InitialMigration.resx">
-      <DependentUpon>201801070855483_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801071137207_AddMunicipalityName.resx">
-      <DependentUpon>201801071137207_AddMunicipalityName.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\MunicpalTax.Data\MunicpalTax.Data.csproj">
+      <Project>{03F16C40-9075-470B-A0D3-02EBD89C80B1}</Project>
+      <Name>MunicpalTax.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="importdata.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
