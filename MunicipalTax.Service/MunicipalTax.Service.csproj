@@ -101,9 +101,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MunicpalTax.Data\MunicpalTax.Data.csproj">
+    <ProjectReference Include="..\MunicpalTax.Data\MunicipalTax.Data.csproj">
       <Project>{03F16C40-9075-470B-A0D3-02EBD89C80B1}</Project>
-      <Name>MunicpalTax.Data</Name>
+      <Name>MunicipalTax.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
